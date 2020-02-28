@@ -17,6 +17,10 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('category_id');
             $table->integer('brand_id');
+            $table->integer('capacity_id');
+            $table->integer('power_output_id');
+            $table->integer('cooking_type_id');
+            $table->integer('color_id');
             $table->string('name');
             $table->text('image')->nullable();
             $table->double('price')->default(0);
